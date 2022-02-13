@@ -1,6 +1,6 @@
 [[package]]
 name = "anki"
-version = "2.1.49"
+version = "2.1.43"
 description = ""
 category = "main"
 optional = false
@@ -10,12 +10,10 @@ python-versions = ">=3.8"
 beautifulsoup4 = "*"
 decorator = "*"
 distro = {version = "*", markers = "sys_platform != \"darwin\" and sys_platform != \"win32\""}
-markdown = "*"
 orjson = {version = "*", markers = "platform_machine == \"x86_64\""}
-protobuf = ">=3.17"
+protobuf = "*"
 psutil = {version = "*", markers = "sys_platform == \"win32\""}
 requests = {version = "*", extras = ["socks"]}
-stringcase = "*"
 
 [package.extras]
 syncserver = ["flask", "waitress"]
@@ -1193,14 +1191,6 @@ pure-eval = "*"
 tests = ["pytest", "typeguard", "pygments", "littleutils"]
 
 [[package]]
-name = "stringcase"
-version = "1.2.0"
-description = "String case converter."
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "terminado"
 version = "0.13.1"
 description = "Tornado websocket backend for the Xterm.js Javascript terminal emulator library."
@@ -1378,13 +1368,13 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c0c6dee5f71c5cfd437cc762c613d39b1991580214802ec9b5cf03e2b03eaca9"
+content-hash = "f26c642c8662d0d142590221b2d0bda76233983b930d282ee7c64dad36db42a3"
 
 [metadata.files]
 anki = [
-    {file = "anki-2.1.49-cp38-abi3-macosx_10_7_x86_64.whl", hash = "sha256:9f4384db0432468f94e69e65244a0a28a6718cd6d187a02463bf0dd64803bdb9"},
-    {file = "anki-2.1.49-cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:746c9807d5f2f87503eb993b28b660fd8e0bc70b969796855dbd48bdaa995af4"},
-    {file = "anki-2.1.49-cp38-abi3-win_amd64.whl", hash = "sha256:fda47880fbc4bf232090ea171fb337c4301d7f001bb2647fccb83785886cc6f8"},
+    {file = "anki-2.1.43-cp38-abi3-macosx_10_7_x86_64.whl", hash = "sha256:95676155bd782106ba3fb7c46082fdfe334916957c4f15d4563b26911a188da5"},
+    {file = "anki-2.1.43-cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:fdac906a9a8534362fbf6830aa195e7cef127e08dfd14177c49a59f9a5f01b76"},
+    {file = "anki-2.1.43-cp38-abi3-win_amd64.whl", hash = "sha256:5cc7131843c1bf6eb2c6bcbec976000dce47d7a6e7c160e5232f6d109836f53a"},
 ]
 appnope = [
     {file = "appnope-0.1.2-py2.py3-none-any.whl", hash = "sha256:93aa393e9d6c54c5cd570ccadd8edad61ea0c4b9ea7a01409020c9aa019eb442"},
@@ -2112,9 +2102,6 @@ soupsieve = [
 stack-data = [
     {file = "stack_data-0.1.4-py3-none-any.whl", hash = "sha256:02cc0683cbc445ae4ca8c4e3a0e58cb1df59f252efb0aa016b34804a707cf9bc"},
     {file = "stack_data-0.1.4.tar.gz", hash = "sha256:7769ed2482ce0030e00175dd1bf4ef1e873603b6ab61cd3da443b410e64e9477"},
-]
-stringcase = [
-    {file = "stringcase-1.2.0.tar.gz", hash = "sha256:48a06980661908efe8d9d34eab2b6c13aefa2163b3ced26972902e3bdfd87008"},
 ]
 terminado = [
     {file = "terminado-0.13.1-py3-none-any.whl", hash = "sha256:f446b522b50a7aa68b5def0a02893978fb48cb82298b0ebdae13003c6ee6f198"},
